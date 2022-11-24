@@ -17,7 +17,6 @@ function App() {
           <Route path="/raffle" element={<Raffle />}></Route>
           <Route path="/vote" element={<Vote />}></Route>
           <Route path="/check" element={<Check />}></Route>
-
           <Route path="*" element={<NotFound />}></Route>
         </Route>
       </Routes>
