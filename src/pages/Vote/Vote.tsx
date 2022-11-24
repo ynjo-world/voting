@@ -44,20 +44,8 @@ const Vote = () => {
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-
-    // if (value === "best") {
-    //   setHelperText("You got it!");
-    //   setError(false);
-    // } else if (value === "worst") {
-    //   setHelperText("Sorry, wrong answer!");
-    //   setError(true);
-    // } else {
-    //   setHelperText("반드시 선택을 해주세요.");
-    //   setError(true);
-    // }
     if (value !== "") {
       setHelperText("투표 완료");
-      // setError(false);
       handleOpen();
     } else {
       setHelperText("반드시 선택을 해주세요.");
@@ -86,7 +74,6 @@ const Vote = () => {
           </FormControl>
         </form>
         <div>
-          {/* <Button onClick={handleOpen}>Open modal</Button> */}
           <Modal
             open={open}
             onClose={handleClose}
